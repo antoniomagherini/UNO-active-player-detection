@@ -2,6 +2,7 @@
 # functions for visualizing the data preprocessing steps, loading the trained model,
 # and plotting the test predictions and Grad-CAM heatmaps for model explainability.
 
+import os
 import torch
 import skimage.io
 
@@ -13,7 +14,8 @@ import torch.nn.functional as F
 from torch.utils.data import DataLoader, ConcatDataset
 from torchvision import transforms
 
-from src.utils_dl import *
+from preprocessing.utils import *
+from preprocessing.dataset import *
 
 def plot_cropping(path='src/data/train_images/L1000772.jpg'):
     '''
