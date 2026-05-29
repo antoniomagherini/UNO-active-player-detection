@@ -16,6 +16,10 @@ The training and testing datasets cannot be shared as part of the Kaggle competi
 \
 Only the reference images and a few testing images are added in the notebook for visualization purposes.
 
+The active player was identified from the presence of a black or yellow dealer next to the UNO cards.
+\
+The position of players was fixed: bottom = player 1, right = player 2, top = player 3, left = player 4.
+
 The model achieved a 100% accuracy on the test dataset, showing strong predictive skills. The inclusion of dataset augmentation improved the test validation accuracy from 0.78 to 1.00.
 
 -----------
